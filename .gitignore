@@ -1,3 +1,10 @@
-*.log
+# IDE files
+/out
 /.idea
 *.iml
+
+# Logs
+*.log
+
+# Output
+*.class

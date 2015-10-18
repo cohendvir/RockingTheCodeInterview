@@ -17,12 +17,7 @@ public class Question2_1_Test {
     @Test
     public void testRemoveDuplicates1() throws Exception {
 
-        LinkedListNode<Integer> node = new LinkedListNode<>(1);
-        node.add(2);
-        node.add(3);
-        node.add(4);
-        node.add(1);
-        node.add(6);
+        LinkedListNode<Integer> node = LinkedListNode.toList(1, 2, 3, 4, 1, 6);
 
         Question2_1.uniquify(node);
 
@@ -32,12 +27,7 @@ public class Question2_1_Test {
     @Test
     public void testRemoveDuplicates2() throws Exception {
 
-        LinkedListNode<Integer> node = new LinkedListNode<>(1);
-        node.add(2);
-        node.add(3);
-        node.add(4);
-        node.add(1);
-        node.add(1);
+        LinkedListNode<Integer> node = LinkedListNode.toList(1, 2, 3, 4, 1, 1);
 
         Question2_1.uniquify(node);
 
@@ -47,8 +37,7 @@ public class Question2_1_Test {
     @Test
     public void testRemoveDuplicates3() throws Exception {
 
-        LinkedListNode<Integer> node = new LinkedListNode<>(1);
-        node.add(1);
+        LinkedListNode<Integer> node = LinkedListNode.toList(1, 1);
 
         Question2_1.uniquify(node);
 

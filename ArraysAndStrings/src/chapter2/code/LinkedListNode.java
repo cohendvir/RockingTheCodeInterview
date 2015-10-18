@@ -33,4 +33,19 @@ public class LinkedListNode<E> {
 
         return sb.toString();
     }
+
+    public static <E> LinkedListNode<E> toList(E... values) {
+
+        if (values.length < 1) {
+            return null;
+        }
+
+        LinkedListNode<E> head = new LinkedListNode<>(values[0]);
+
+        for (int i = 1; i < values.length; i++) {
+            head.add(values[i]);
+        }
+
+        return head;
+    }
 }

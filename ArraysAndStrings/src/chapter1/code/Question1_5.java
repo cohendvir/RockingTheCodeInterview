@@ -1,4 +1,4 @@
-package chapter1;
+package chapter1.code;
 
 /**
  * Created by Dvir on 18/10/2015.

@@ -1,4 +1,4 @@
-package chapter1;
+package chapter1.code;
 
 import java.util.ArrayList;
 import java.util.HashSet;

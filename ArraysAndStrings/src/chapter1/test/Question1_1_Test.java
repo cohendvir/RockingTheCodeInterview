@@ -1,6 +1,6 @@
-package test.chapter1;
+package chapter1.test;
 
-import chapter1.Question1_1;
+import chapter1.code.Question1_1;
 import org.junit.Assert;
 import org.junit.Test;
 

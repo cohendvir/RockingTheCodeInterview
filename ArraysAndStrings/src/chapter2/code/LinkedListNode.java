@@ -3,16 +3,16 @@ package chapter2.code;
 /**
  * Created by Dvir on 18/10/2015.
  */
-public class LinkedListNode<E> {
+public class LinkedListNode {
 
-    public E value;
+    public Integer value;
     public LinkedListNode next;
 
-    public LinkedListNode(E value) {
+    public LinkedListNode(Integer value) {
         this.value = value;
     }
 
-    public void add(E value) {
+    public void add(Integer value) {
         LinkedListNode node = new LinkedListNode(value);
         LinkedListNode n = this;
         while (n.next != null) {
@@ -25,7 +25,7 @@ public class LinkedListNode<E> {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(value);
-        LinkedListNode<E> n = this;
+        LinkedListNode n = this;
         while (n.next != null) {
             sb.append(", ").append(n.next.value);
             n = n.next;
@@ -34,13 +34,13 @@ public class LinkedListNode<E> {
         return sb.toString();
     }
 
-    public static <E> LinkedListNode<E> toList(E... values) {
+    public static LinkedListNode toList(Integer... values) {
 
         if (values.length < 1) {
             return null;
         }
 
-        LinkedListNode<E> head = new LinkedListNode<>(values[0]);
+        LinkedListNode head = new LinkedListNode(values[0]);
 
         for (int i = 1; i < values.length; i++) {
             head.add(values[i]);

@@ -5,10 +5,10 @@ package chapter2.code;
  */
 public class Question2_3 {
 
-    public static <E> void deleteNode(LinkedListNode<E> node) {
+    public static void deleteNode(LinkedListNode node) {
 
         if (node.next != null) {
-            node.value = (E) node.next.value;
+            node.value = node.next.value;
             node.next = node.next.next;
         }
         else {

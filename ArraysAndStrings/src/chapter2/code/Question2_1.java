@@ -7,16 +7,16 @@ import java.util.*;
  */
 public class Question2_1 {
 
-    public static <E> void uniquify(LinkedListNode<E> head) {
+    public static void uniquify(LinkedListNode head) {
 
-        LinkedListNode<E> pointer = head;
+        LinkedListNode pointer = head;
 
         while (pointer != null) {
-            LinkedListNode<E> runner = pointer;
-            E pointerValue = pointer.value;
+            LinkedListNode runner = pointer;
+            Integer pointerValue = pointer.value;
 
             while (runner.next != null) {
-                E runnerValue = (E) runner.next.value;
+                Integer runnerValue = runner.next.value;
 
                 if (runnerValue != null && runnerValue.equals(pointerValue)) {
                     runner.next = runner.next.next;

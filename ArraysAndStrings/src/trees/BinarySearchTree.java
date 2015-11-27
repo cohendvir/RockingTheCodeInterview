@@ -73,8 +73,4 @@ public class BinarySearchTree<V extends Comparable> {
             return exists(subtree.getRight(), value);
         }
     }
-
-    public boolean remove(V value) {
-
-    }
 }
